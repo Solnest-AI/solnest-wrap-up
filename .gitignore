@@ -1,0 +1,37 @@
+# Secrets: never commit or share these
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+token*.json
+tokens.json
+credentials*.json
+auth.json
+.mcp.json
+
+# Caches, environments, logs, output
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.cache/
+cache/
+*.log
+*.lock
+output/
+outputs/
+*-profile/
+*.bak*
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Updater state and the installed launcher (never part of a release)
+.update-backup/
+.wrap-up-files.txt
+bin/
+*.update-tmp
+.pytest_cache/
